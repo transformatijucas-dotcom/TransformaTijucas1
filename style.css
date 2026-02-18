@@ -1,0 +1,125 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        linear-gradient(rgba(105, 120, 139, 0.7), rgba(113, 194, 252, 0.7)),
+        url("fundoprincipal.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+
+/* ===== MENU (links <a>) ===== */
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Hover */
+a:hover {
+    background-color: white;
+    color: #0077cc;
+    transform: translateY(-2px);
+}
+
+/* Caixa principal */
+body div {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+p{
+ max-width: 900px;
+    margin: 15px auto;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+.contato-topo {
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contato-box {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: rgba(19, 106, 146, 0.932);
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    color: rgb(245, 242, 242);
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    background: rgba(45, 10, 238, 0.15);
+}
+
+.item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00c3ff;
+}
+
+
+
+
+
+
