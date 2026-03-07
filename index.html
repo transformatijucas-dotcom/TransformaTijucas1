@@ -54,54 +54,5 @@
             <h2>👤 Captação de ImagensVideos</h2>
             <p>Mateus Rodrigues (48) 9131-9486</p>
         </div>
-    </div>
-
-
-<!-- CONTADOR DE VISITANTES -->
-
-<style>
-.contador-site{
-background:#f4f4f4;
-padding:20px;
-border-radius:10px;
-width:260px;
-font-family:Arial, sans-serif;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-margin-top:20px;
-}
-
-.contador-site h3{
-margin-top:0;
-}
-
-.contador-site span{
-font-weight:bold;
-color:#0077cc;
-font-size:18px;
-}
-</style>
-
-<div class="contador-site">
-<h3>📊 Estatísticas do site</h3>
-<p>👥 Visitantes totais: <span id="visitas-total">Carregando...</span></p>
-</div>
-
-<script>
-
-const namespace = "transformatijucas";
-const key = "visitas";
-
-fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-.then(res => res.json())
-.then(data => {
-  document.getElementById("visitas-total").innerText = data.value;
-})
-.catch(() => {
-  document.getElementById("visitas-total").innerText = "0";
-});
-
-</script>
-
-
 </body>
 </html>
