@@ -118,6 +118,36 @@ p{
     color: #00c3ff;
 }
 
+/* ===== CONTADOR DO SITE ===== */
+
+.contador-site{
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 300px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.contador-site h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #0077cc;
+}
+
+.contador-site p{
+    text-align: center;
+    font-size: 16px;
+}
+
+#visitas-total{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0077cc;
+}
+
 
 
 
