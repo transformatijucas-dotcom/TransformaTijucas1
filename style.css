@@ -1,110 +1,169 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ===== RESET ===== */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-/* FUNDO */
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:
-        linear-gradient(rgba(105, 120, 139, 0.7), rgba(113, 194, 252, 0.7)),
-        url("fundoprincipal.PNG");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    color: white;
+/* ===== FUNDO ===== */
+body{
+font-family:"Segoe UI",Arial,sans-serif;
+
+background:
+linear-gradient(rgba(105,120,139,0.7),rgba(113,194,252,0.7)),
+url("fundoprincipal.PNG");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+min-height:100vh;
+color:white;
 }
 
+/* ===== HEADER ===== */
 header{
-    text-align: center;
+text-align:center;
+padding:60px 20px 30px 20px;
 }
 
-
-/* ===== MENU (links <a>) ===== */
-a {
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 6px;
-    transition: 0.3s;
+/* ===== TITULOS ===== */
+h1{
+font-size:48px;
+margin-bottom:10px;
+font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+letter-spacing:1px;
 }
 
-nav {
-    text-align: center;
-    margin-top: 20px;
+h2{
+font-size:20px;
+opacity:0.9;
 }
 
+/* ===== TEXTO ===== */
+p{
+max-width:900px;
+margin:20px auto;
+text-align:left;
+line-height:1.7;
+font-size:17px;
+padding:0 15px;
+}
+
+/* ===== MENU ===== */
+nav{
+text-align:center;
+margin-top:20px;
+margin-bottom:40px;
+}
+
+a{
+display:inline-block;
+padding:12px 22px;
+margin:8px;
+text-decoration:none;
+color:white;
+font-weight:500;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(6px);
+
+border-radius:8px;
+
+transition:all 0.3s ease;
+}
 
 /* Hover */
-a:hover {
-    background-color: white;
-    color: #0077cc;
-    transform: translateY(-2px);
+a:hover{
+background:white;
+color:#0077cc;
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Caixa principal */
-body div {
-    margin-top: 60px;
-    text-align: center;
+/* ===== CONTEUDO ===== */
+body div{
+margin-top:60px;
+text-align:center;
+padding:25px;
+
+background:rgba(0,0,0,0.35);
+
+border-radius:12px;
+
+max-width:1000px;
+
+margin-left:auto;
+margin-right:auto;
+
+backdrop-filter:blur(4px);
 }
 
-/* Título */
-h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* ===== CONTATO ===== */
+.contato-topo{
+padding:60px 20px;
 }
 
-/* Subtítulo */
-h2 {
-    font-size: 20px;
-    opacity: 0.9;
+.contato-box{
+max-width:1000px;
+margin:0 auto;
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+/* ===== CARDS ===== */
+.item{
+background:rgba(19,106,146,0.9);
+
+padding:25px;
+
+border-radius:12px;
+
+width:100%;
+max-width:280px;
+
+text-align:center;
+
+color:white;
+
+transition:all 0.3s ease;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Hover */
+.item:hover{
+transform:translateY(-6px);
+background:rgba(19,106,146,1);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width:768px){
+
+h1{
+font-size:34px;
+}
+
+h2{
+font-size:18px;
 }
 
 p{
- max-width: 900px;
-    margin: 15px auto;
-    text-align: left;
-    line-height: 1.7;
-    font-size: 17px;
-    padding: 0 15px;
+font-size:16px;
+text-align:center;
 }
 
-.contato-topo {
-    padding: 50px 20px;
-    font-family: Arial, sans-serif;
+a{
+display:block;
+width:90%;
+margin:10px auto;
 }
 
-.contato-box {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+body div{
+margin:30px 15px;
 }
 
-.item {
-    background: rgba(19, 106, 146, 0.932);
-    padding: 25px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-    color: rgb(245, 242, 242);
-    transition: 0.3s;
 }
-
-
-
-
-
-
-
